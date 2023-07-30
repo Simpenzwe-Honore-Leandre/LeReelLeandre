@@ -1,0 +1,127 @@
+@media (hover: hover) {
+  .connections:hover,
+  #projectgrid > div:hover {
+    background-position: 40% 40%;
+    background-image: url(https://images.pexels.com/photos/5731971/pexels-photo-5731971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  }
+
+  h1:hover {
+    transition-duration: ease-in-out 1s;
+    background-position: 200vmin;
+    border: 2px solid gold;
+    transition-duration: 0.3s;
+  }
+  h2:hover {
+    transition-duration: ease-in-out 1s;
+    background-size: 1vmin 1vmin;
+    border: 2px solid gold;
+    background-position: 0% 40%;
+    box-shadow: 5px royalblue;
+  }
+}
+@keyframes backgroundmotion {
+  from {
+    background-position: 100% 0%;
+  }
+  to {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes round {
+  from {
+    transform: rotate(5deg) translate(30%);
+    opacity: 0;
+    background-size: 6vmin 6vmin;
+    background-image: radial-gradient(rgb(185, 185, 185, 0.7), black 40%);
+  }
+
+  to {
+    transform: rotate(0deg) translate(0%);
+    opacity: 1;
+    background-size: 3vmin 3vmin;
+    background-image: radial-gradient(rgb(185, 185, 185, 0.7), black 40%);
+  }
+}
+
+h1,
+h2 {
+  display: flex;
+  color: black;
+  transition: 3s ease-in-out;
+  border-radius: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  background: url(https://plus.unsplash.com/premium_photo-1676150789902-42fb49f12466?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+}
+a {
+  color: whitesmoke;
+  backdrop-filter: blur(2vmax);
+  font-size: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  animation: round 1s;
+  animation: backgroundmotion 20s infinite linear;
+  font-family: monospace;
+  backdrop-filter: blur(1vmin);
+  font-size: 5vmin;
+  padding: 3vmin;
+  background-size: 10vmax 10vmin;
+  color: white;
+  border: 0.3vmin solid gold;
+  border-radius: 1vmin;
+  background-image: conic-gradient(rgb(185, 185, 185, 0.7), black 40%);
+}
+
+.Projects {
+  border-radius: 2vmin;
+  background-color: linear-gradient(90deg, black, transparent, white);
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  padding: 5vmin;
+  margin-top: 5rem;
+  border: whitesmoke solid 0.2rem;
+  justify-content: center;
+  border-radius: 5vmin 5vmin 0vmin 0vmin;
+  text-decoration-line: underline;
+  background-image: url(https://images.pexels.com/photos/5731971/pexels-photo-5731971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.connections{
+  border: whitesmoke solid 0.2rem;
+  border-radius: 5vmin 5vmin 0vmin 0vmin;
+  text-decoration: none;
+  padding: 2vmin;
+  background-image: url(https://images.pexels.com/photos/5731971/pexels-photo-5731971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+@media (orientation: landscape) {
+  #projectgrid {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-areas:
+      "csharp"
+      "java"
+      "quicksort";
+  }
+}
+
+#projectgrid div {
+  border-radius: 5vmin 5vmin 0vmin 0vmin;
+  transition: ease-in-out 2s;
+  text-decoration: none;
+  border: whitesmoke solid 0.2rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0rem 0rem 0rem;
+  height: 100%;
+  background: rgb(18, 18, 19);
+  background-repeat: no-repeat;
+}
+
